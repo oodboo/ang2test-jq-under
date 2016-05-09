@@ -12,14 +12,8 @@ import {Observable} from 'rxjs/Rx'
 export class AppComponent {
 
     constructor() {
-        //new Observable()
-        // keyups.subscribe(function (data) {
-        //     console.log(data);
-        // })
-
         var keyups = Observable.fromEvent($('#search'), "keyup");
         keyups.subscribe(data => console.log(data));
-
     }
 }
 
