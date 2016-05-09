@@ -17,8 +17,8 @@ export class AppComponent {
         //     console.log(data);
         // })
 
-        //var keyups = Observable.fromEvent($('#search'), "keyup");
-        //keyups.subscribe(data => console.log(data));
+        var keyups = Observable.fromEvent($('#search'), "keyup");
+        keyups.subscribe(data => console.log(data));
 
     }
 }
