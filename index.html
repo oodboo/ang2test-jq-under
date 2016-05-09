@@ -7,24 +7,15 @@
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 
   <!-- 1. Load libraries -->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/underscore/underscore.js"></script>
+        
     <script src="node_modules/es6-shim/es6-shim.min.js"></script>
     <script src="node_modules/zone.js/dist/zone.js"></script>
     <script src="node_modules/reflect-metadata/Reflect.js"></script>
     <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/jsuery/dist/system.src.js"></script>
 
-  <!-- 2. Configure SystemJS -->
-  <!--<script>
-    System.config({
-        packages: {        
-          app: {
-            format: 'register',
-            defaultExtension: 'js'
-          }
-        }
-      });
-      System.import('app/main')
-        .then(null, console.error.bind(console));
-  </script>-->
   <script src="systemjs.config.js"></script>
   <script>
     System.import('app').catch(function(err){ console.error(err);  });
